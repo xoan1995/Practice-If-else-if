@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice with If- else -if</title>
+</head>
+<body>
+<p>Viết chương trình kiểm tra đăng nhập hệ thống của người dùng theo yêu cầu sau
+
+    Yêu cầu người dùng nhập tên từ bàn phím. <br>
+
+    Nếu tên nhập vào là Admin thì yêu cầu nhập mật khẩu. <br>
+    Nếu mật khẩu là TheMaster thì in ra chuỗi Welcome. <br>
+    Nếu mật khẩu nhập vào là null in ra chuỗi Canceled. <br>
+    Còn lại in ra chuỗi Wrong password <br>
+    Nếu tên nhập vào là null in ra chuỗi canceld. <br>
+    Còn lại in ra chuỗi “I don’t know you"</p>
+<button onclick="checkPersons()">Click me!
+</button>
+<script>
+    function checkPersons(){
+        let userName= prompt('Who\'s here!');
+        if(userName=="Admin"){
+            let pass= prompt("Password? ");
+            if(pass=='TheMaster'){
+               alert('Welcome');
+            }else if(pass=='null'){
+                alert('Canceled ');
+            }else{
+                alert('Wrong password');
+            }
+        }else{
+            alert('I don\'t know you' );
+        }
+    }
+</script>
+</body>
+</html>
